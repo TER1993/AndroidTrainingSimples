@@ -21,8 +21,8 @@ import com.zhouwei.androidtrainingsimples.R;
 public class LayoutAnimationActivity extends AppCompatActivity {
 
     private LayoutAnimationController mAnimationController;
-
     private LinearLayout mLayout;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,10 +45,8 @@ public class LayoutAnimationActivity extends AppCompatActivity {
         mAnimationController = new LayoutAnimationController(animation);
         mAnimationController.setOrder(LayoutAnimationController.ORDER_NORMAL);
         // mAnimationController.setDelay(1.2f);
-
         mLayout = findViewById(R.id.layout_container);
         mLayout.setLayoutAnimation(mAnimationController);
-
     }
 
     @Override
